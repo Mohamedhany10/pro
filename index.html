@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- links ---------------------------------------- -->
+    <link rel="stylesheet" href="css/pr.css">
+    <!-- links ---------------------------------------- -->
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="parent">
+            <div class="content">
+                <div class="id">
+                </div>
+                <div class="log">
+                  <!-- form doctor--------------------------------------------------------- -->
+                    <div class="page" id="page">
+                      <center><h1>Doctor</h1></center>  
+                        <div class="form">
+                            <form action="" method="">
+                                <div class="name">
+                                  <input type="text" name="" id="" placeholder="first name" name="fname">
+                                  <input type="text" name="" id="" placeholder="last name" name="lname" >
+                                  <div class="iddd">
+                                      <input type="number" name="" id="" placeholder="Doctor Rank"  name="Rank" >
+                                      <input type="number" name="" id="" placeholder="+20 010 935 92447" name="number">
+                                  </div>
+                                </div>  
+                               <div class="submit">
+                                <button type="submit" class="insert">insert</button>
+                                <button class="show">Show Data</button>
+                               </div>
+                              </form>
+
+                        </div>
+                    </div>
+                       <!-- form doctor--------------------------------------------------------- -->
+                       <!-- start form patient --------------------------------------------------------- -->
+
+                    <div class="page1" id="page1">
+                        <center><h1>patient</h1></center>  
+                          <div class="form1">
+                              <form action="" method="">
+                                  <div class="name">
+                                    <input type="text" name="" id="" placeholder="first name" >
+                                    <input type="text" name="" id="" placeholder="last name" >
+                                    <div class="iddd">
+                                        <input type="text" name="" id="" placeholder="Adress">
+                                    </div>
+                                  </div>  
+                                 <div class="submit1">
+                                     <button class="insert1">insert</button>
+                                     <button class="show1">Show Data</button>
+                                 </div>
+                                </form>
+  
+                          </div>
+                      </div>
+                       <!-- end form patient --------------------------------------------------------- -->
+                       <!-- start form nurses --------------------------------------------------------- -->
+
+                      <div class="page2" id="page2">
+                        <center><h1>Nurses</h1></center>  
+                          <div class="form2">
+                              <form action="" method="">
+                                  <div class="name">
+                                    <input type="text" name="" id="" placeholder="first name" >
+                                    <input type="text" name="" id="" placeholder="last name" >
+                                    <div class="iddd">
+                                    </div>
+                                  </div>  
+                                 <div class="submit2">
+                                     <button class="insert2">insert</button>
+                                     <button class="show2">Show Data</button>
+                                 </div>
+                                </form>
+  
+                          </div>
+                      </div>
+                       <!--end form nurses --------------------------------------------------------- -->
+                       <!-- start form room --------------------------------------------------------- -->
+
+                      <div class="page3" id="page3">
+                        <center><h1>Room</h1></center>  
+                          <div class="form3">
+                              <form action="" method="">
+                                  <div class="name">
+                                    <input type="text" name="" id="" placeholder="Room Id" >
+                                    <input type="text" name="" id="" placeholder="Devices" >
+                                  </div>  
+                                 <div class="submit3">
+                                     <button class="insert3">insert</button>
+                                     <button class="show3">Show Data</button>
+                                 </div>
+                                </form>
+                          </div>
+                      </div>
+                       <!-- end form room --------------------------------------------------------- -->
+
+                    <div class="icon">
+                        <a id="one" href="#">Doctor</a>
+                        <a id="two" href="#">Patient</a>
+                        <a id="three" href="#">Nurses</a>
+                        <a id="four"href="#">Room</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var one = document.getElementById("one");
+        var two = document.getElementById("two");
+        var three= document.getElementById("three");
+        var four= document.getElementById("four");
+        var page = document.getElementById("page");
+        var page1 = document.getElementById("page1");
+        var page2 = document.getElementById("page2");
+        var page3 = document.getElementById("page3");
+        one.onclick = function (){
+          one.style.backgroundColor = "black";
+          two.style.backgroundColor = "transparent";
+          three.style.backgroundColor = "transparent";
+          four.style.backgroundColor = "transparent";
+          page.style.display = "block";
+          page1.style.display = "none";
+          page2.style.display = "none";
+          page3.style.display = "none";
+        };
+        two.onclick = function (){
+          two.style.backgroundColor = "black";
+          one.style.backgroundColor = "transparent";
+          three.style.backgroundColor = "transparent";
+          four.style.backgroundColor = "transparent";
+          page.style.display = "none";
+          page1.style.display = "block";
+          page2.style.display = "none";
+          page3.style.display = "none";
+        };
+       three.onclick = function (){
+          three.style.backgroundColor = "black";
+          one.style.backgroundColor = "transparent";
+          two.style.backgroundColor = "transparent";
+          four.style.backgroundColor = "transparent";
+          page.style.display = "none";
+          page1.style.display = "none";
+          page2.style.display = "block";
+          page3.style.display = "none";
+        };
+        four.onclick = function (){
+          four.style.backgroundColor = "black";
+          one.style.backgroundColor = "transparent";
+          two.style.backgroundColor = "transparent";
+          three.style.backgroundColor = "transparent";
+          page.style.display = "none";
+          page1.style.display = "none";
+          page2.style.display = "none";
+          page3.style.display = "block";
+        };
+      //mohany
+    </script>
+</body>
+</html>
